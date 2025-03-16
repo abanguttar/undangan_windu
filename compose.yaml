@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+ undangan_windu:
+    container_name: undangan_windu
+    image: dunglas/frankenphp
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "9021:8021"
+    entrypoint: php artisan octane:frankenphp --max-requests=1 --port=8021
+    volumes:
+      - ./.:/app/
+      # - ./.env:/app/.env
+      # - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./custom-php.ini:/usr/local/etc/php/conf.d/99-custom.ini
+    tty: true
+
+volumes:
+  undangan_windu:
+
+
