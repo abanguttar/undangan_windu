@@ -51,7 +51,7 @@ export default function Section8({ csrf_token, setComments, comments }) {
                 return res.json();
             })
             .then((data) => {
-                toastr.success("Berhasil mengirim pesan!");
+                toastr.success("Berhasil mengirim ucapan & do'a!");
                 setData((prev) => ({
                     ...prev,
                     ["name"]: "",
