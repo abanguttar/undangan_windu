@@ -1,17 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UndanganController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return redirect('/rianrevaweddinginvitation');
 });
 
 Route::get('/dashboard', function () {
@@ -24,4 +20,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::controller(UndanganController::class)->group(function () {
+    Route::get('/rianrevaweddinginvitation', 'index');
+    Route::get('/comments', 'fetchComment');
+    Route::post('/rianrevaweddinginvitation', 'store');
+});
+
+require __DIR__ . '/auth.php';
