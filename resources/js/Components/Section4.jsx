@@ -44,7 +44,7 @@ export default function Section4() {
                                 <TextDesc>
                                     Kediaman Mempelai Wanita <br /> Kp.
                                     Pangkalan RT.04/05 Desa Sukajaya, <br />{" "}
-                                    Kec. Tamansari, Kab. Bogor Alamat akad nikah
+                                    Kec. Tamansari, Kab. Bogor
                                 </TextDesc>
                             </ScrollAnimation>
                         </div>

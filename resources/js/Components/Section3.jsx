@@ -57,7 +57,7 @@ export default function Section3() {
                                 <br />
                                 Kediaman Mempelai Wanita <br /> Kp. Pangkalan
                                 RT.04/05 Desa Sukajaya, <br /> Kec. Tamansari,
-                                Kab. Bogor Alamat akad nikah
+                                Kab. Bogor
                             </TextDesc>
                         </ScrollAnimation>
                         <div className="border-b-2 border-color mt-10"></div>
@@ -72,7 +72,7 @@ export default function Section3() {
                                 <br />
                                 Kediaman Mempelai Wanita <br /> Kp. Pangkalan
                                 RT.04/05 Desa Sukajaya, <br /> Kec. Tamansari,
-                                Kab. Bogor Alamat akad nikah
+                                Kab. Bogor
                             </TextDesc>
                         </ScrollAnimation>
                         <div className="border-b-2 border-color mt-10"></div>
